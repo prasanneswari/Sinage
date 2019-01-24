@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jts.root.sinage_10.adapter_scheldule">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        tools:ignore="UselessParent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:id="@+id/row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:focusable="true"
+                    android:layout_marginTop="5dp"
+                    android:focusableInTouchMode="false" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:background="#000">
+                </View>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="match_parent"
+                    android:text="Schedule"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:id="@+id/schedule"
+                    android:layout_gravity="left"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:background="#000">
+                </View>
+
+                <Spinner
+                    android:id="@+id/on_off"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Department "
+                    android:singleLine="true"
+                    android:paddingBottom="13dp"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText"
+                    />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:background="#000">
+                </View>
+                <Spinner
+                    android:id="@+id/act_inact"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Department "
+                    android:singleLine="true"
+                    android:paddingBottom="13dp"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText"
+                    />
+               <!-- <CheckBox
+                    android:id="@+id/act_inact"
+                    android:clickable="false"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:focusableInTouchMode="false" />
+-->
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:background="#000">
+                </View>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>
